@@ -1,12 +1,20 @@
 import React from 'react'
 
+import BpkImage from 'bpk-component-image';
+
 import { cssModules } from 'bpk-react-utils';
 import STYLES from './style.scss';
 const getClassName = cssModules(STYLES);
 
 export default ({ imgSrc, rank, title, location }) => (
   <div>
-    <img src={imgSrc} />
+    <img className={getClassName('checkpoint-image')} src={imgSrc} />
+    {/* <BpkImage
+    altText="image description"
+    width={231}
+    height={185}
+    src={imgSrc}
+  /> */}
     <p>#{rank} Destination</p>
     <p>{title}</p>
     <p>{location}</p>

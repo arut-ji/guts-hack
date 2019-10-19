@@ -6,17 +6,17 @@ export default {
     green: "50%"
   },
   checkpoints: [{
-    imgSrc: "https://via.placeholder.com/150",
+    imgSrc: "imgs/photo_hongkong_1.jpg",
     rank: "#1st Destination",
     title: "Title Placeholder",
     location: "location placeholder"
   },{
-    imgSrc: "https://via.placeholder.com/150",
+    imgSrc: "imgs/photo_hongkong_2.jpg",
     rank: "#1st Destination",
     title: "Title Placeholder",
     location: "location placeholder"
   },{
-    imgSrc: "https://via.placeholder.com/150",
+    imgSrc: "imgs/photo_hongkong_3.jpg",
     rank: "#1st Destination",
     title: "Title Placeholder",
     location: "location placeholder"
@@ -36,5 +36,6 @@ export default {
     from: 'Montane Mansion',
     to: 'Choi Hung Estate',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
-  },]
+  },],
+  mapImgSrc: ''
 }
