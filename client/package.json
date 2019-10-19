@@ -5,7 +5,8 @@
   "dependencies": {
     "backpack-react-scripts": "7.0.2",
     "react": "16.10",
-    "react-dom": "16.10"
+    "react-dom": "16.10",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,6 +23,11 @@
   "devDependencies": {
     "bpk-component-button": "*",
     "bpk-component-code": "*",
+    "bpk-component-grid": "^2.0.5",
+    "bpk-component-icon": "^5.0.5",
+    "bpk-component-input": "^5.0.5",
+    "bpk-component-map": "^3.0.5",
+    "bpk-component-spinner": "^3.0.5",
     "bpk-component-table": "^2.0.5",
     "bpk-component-text": "*",
     "bpk-mixins": "*",
