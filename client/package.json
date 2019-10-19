@@ -26,6 +26,7 @@
   "devDependencies": {
     "bpk-component-button": "^3.0.5",
     "bpk-component-code": "*",
+    "bpk-component-grid": "^2.0.5",
     "bpk-component-mobile-scroll-container": "^2.0.5",
     "bpk-component-table": "^2.0.5",
     "bpk-component-text": "^2.0.5",
