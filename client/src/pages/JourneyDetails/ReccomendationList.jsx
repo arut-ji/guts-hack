@@ -15,9 +15,11 @@ export default ({checkpoints}) => (
         return (
           <div key={index}>
             <img src={item.imgSrc}/>
-            <p>{item.rank}</p>
-            <p>{item.title}</p>
-            <p>{item.location}</p>
+            <div className={getClassName('scroll-container-text')}>
+              <p>{item.rank}</p>
+              <p>{item.title}</p>
+              <p>{item.location}</p>
+            </div>
           </div>
         )
       })
