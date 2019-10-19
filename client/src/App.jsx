@@ -4,6 +4,8 @@ import BpkText from 'bpk-component-text';
 import STYLES from './App.scss';
 import JourneyDetails from './pages/JourneyDetails';
 import EcoDataTest from './pages/EcoDataTest';
+import Home from './pages/Home';
+
 const c = className => STYLES[className] || 'UNKNOWN';
 
 const App = () => {
@@ -12,8 +14,8 @@ const App = () => {
 
   return (
     <div className={c('App')}>
-      <EcoDataTest/>
-      <JourneyDetails/>
+      <Home />
+      {/* <JourneyDetails/> */}
     </div>
   );
 };
