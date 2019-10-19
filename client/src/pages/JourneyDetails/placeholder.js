@@ -23,7 +23,7 @@ export default {
   },
 ],
   reviewer: {
-    imgSrc: "https://via.placeholder.com/50",
+    imgSrc: "imgs/profile-pic.png",
     name: "Oea Romana",
     location: "Traveller based in UK"
   },
