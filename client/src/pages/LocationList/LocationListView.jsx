@@ -17,9 +17,9 @@ const LocationListView = () => {
 
         <Container>
             <SearchForm/>
-            <ListItems > </ListItems>
+            <ListItems/>
         </Container>
-           
+
     )
 }
 

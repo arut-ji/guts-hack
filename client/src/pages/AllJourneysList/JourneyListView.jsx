@@ -50,7 +50,7 @@ const JourneyListView = (props) => {
 			<BpkGridRow>
 				{props.journeyList.map((j) => (
 					<BpkGridColumn width={5} tabletWidth={12}>
-						<JourneyCard stops = {j.stops }name = {j.name} price={j.price} ecoIndex={j.ecoIndex} imgs={j.imgs} />
+						<JourneyCard stops = {j.stops}name = {j.name} price={j.price} ecoIndex={j.ecoIndex} imgs={j.imgs} />
 					</BpkGridColumn>
 				))}
 			</BpkGridRow>
