@@ -1,0 +1,19 @@
+@import '~bpk-mixins/index';
+
+.scroll-container {
+  display: flex;
+
+  &__item {
+    display: flex;
+    min-width: $bpk-spacing-xxl * 5;
+    height: $bpk-spacing-xxl * 5;
+    justify-content: center;
+    align-items: center;
+    background-color: $bpk-color-sky-gray-tint-07;
+  }
+}
+
+.back-button-container {
+  text-align: left;
+  margin-left: $bpk-spacing-sm;
+}
