@@ -13,8 +13,11 @@ const AlignedArrow = withAlignment(
   ArrowLeftIconSm, lineHeightBase, iconSizeSm
 );
 
+
+
 export default () => (
   <div className={getClassName('back-button-container')}>
+    <i className="fas fa-chevron-left"/>
     <BpkText textStyle="base">
       <AlignedArrow fill={colors.colorSkyGrayTint01} />
     </BpkText>

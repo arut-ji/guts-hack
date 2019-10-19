@@ -11,11 +11,13 @@ export default ({onClick, totalPrice}) => (
     <div className={getClassName('booking-bar')}>
     </div>
     <div className={getClassName('booking-bar__actual')}>
-      <span>£{totalPrice}</span>
-      <span>price per person</span>
-    <span>
-      <BpkButton onClick={onClick}>Primary</BpkButton>
-    </span>
+      <div>
+        £{totalPrice}
+        <span> price per person</span>
+      </div>
+      <span>
+        <BpkButton onClick={onClick}>Book</BpkButton>
+      </span>
     </div>
   </div>
 )

@@ -1,7 +1,59 @@
 @import '~bpk-mixins/index';
 
+.travelling-block {
+  margin: 23px;
+  text-align: left;
+}
+
 .scroll-container {
   display: flex;
+
+  &__item {
+    display: flex;
+    min-width: $bpk-spacing-xxl * 5;
+    height: $bpk-spacing-xxl * 5;
+    background-color: $bpk-color-sky-gray-tint-07;
+  }
+}
+
+.scroll-container-inner {
+  border: solid 1px #424242;
+  min-width: 204px;
+  padding: 25px 19px;
+  margin: 27px 5px;
+
+  p {
+    white-space: normal;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 19px 0;
+    font-size: 16px;
+  }
+
+  p:nth-child(3) {
+    color: #555555;
+    font-size: 14px;
+  }
+
+}
+
+.scroll-container-text {
+  text-align: left;
+  margin: 16px 12px 41px;
+
+  p:nth-child(1) {
+    color: #00a698;
+    font-size: 14px;
+  }
+
+  p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  p:nth-child(3) {
+    color: #555555;
+    font-size: 14px;
+  }
 }
 
 .booking-bar {
@@ -9,33 +61,72 @@
   left: 0;
   right: 0;
   height: 60px;
-  
+
+
   &__actual {
     background-color: white;
-    position: fixed; 
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    padding: 16px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;;
+    font-size: 24px;
+    z-index: 10;
+
+    span {
+      font-size: 16px;
+    }
   }
+
+
 }
 
 .back-button-container {
+  display: flex;
+  align-items: center;
+  height: 42px;
   text-align: left;
   margin-left: $bpk-spacing-sm;
 }
 
-.checkpoint-image { 
+.back-button-container > i {
+  font-size: 24px;
+}
+
+.checkpoint-image {
   width: 231px;
   height: 185px;
 }
 
 .reviewer-block {
-  margin: 0px 13px;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  padding-top: $bpk-spacing-sm;
-  padding-bottom: $bpk-spacing-sm;
+  margin: 0 13px;
+  border-top: 0.5px solid #979797;
+  border-bottom: 0.5px solid #979797;
+  padding-top: $bpk-spacing-xs;
+  padding-bottom: $bpk-spacing-xs;
+
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 48px;
+  }
+
+  div {
+    text-align: left;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+
+    p:nth-child(2) {
+      color: #484848;
+    }
+  }
 }
 
 .reviewer-name {
@@ -49,3 +140,67 @@
 .pink-icon {
   fill: $bpk-color-panjin;
 }
+
+.header {
+  font-size: 32px;
+  text-align: left;
+  margin-left: 32px;
+  line-height: normal;
+}
+
+.sub-header {
+  font-size: 16px;
+  display: flex;
+  color: #484848;
+  align-items: center;
+}
+
+.eco-header {
+  font-size: 16px;
+  display: flex;
+  color: #00a698;
+  fill: #00a698;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
+p {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+  div {
+    margin-left: 60px;
+  }
+}
+
+.description {
+  text-align: left;
+  font-size: 18px;
+  margin: 36px 23px;
+
+  p:nth-child(1) {
+    margin-bottom: 27px;
+    font-size: 32px;
+  }
+
+  p:nth-child(2) {
+    color: #4b4b4b;
+    line-height: 23px;
+  }
+}
+
+.wrap {
+  overflow-wrap: break-word;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+

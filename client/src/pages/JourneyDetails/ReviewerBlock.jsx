@@ -9,7 +9,10 @@ const getClassName = cssModules(STYLES);
 export default ({ imgSrc, name, location }) => (
     <div className={getClassName('reviewer-block')}>
         <img src={imgSrc}/>
-        <p className={getClassName('reviewer-name')}>{name}</p>
-        <p className={getClassName('reviewer-name')}>{location}</p>
+        <div>
+          <p className={getClassName('reviewer-name')}>{name}</p>
+          <p className={getClassName('reviewer-name')}>{location}</p>
+        </div>
+
     </div>
 )
