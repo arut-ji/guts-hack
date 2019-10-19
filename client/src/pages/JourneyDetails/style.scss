@@ -13,6 +13,22 @@
   }
 }
 
+.booking-bar {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  
+  &__actual {
+    background-color: white;
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+  }
+}
+
 .back-button-container {
   text-align: left;
   margin-left: $bpk-spacing-sm;
@@ -21,4 +37,24 @@
 .checkpoint-image { 
   width: 231px;
   height: 185px;
+}
+
+.reviewer-block {
+  margin: 0px 13px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: $bpk-spacing-sm;
+  padding-bottom: $bpk-spacing-sm;
+}
+
+.reviewer-name {
+
+}
+
+.reviewer-location {
+
+}
+
+.pink-icon {
+  fill: $bpk-color-panjin;
 }

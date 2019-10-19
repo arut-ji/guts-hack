@@ -14,7 +14,7 @@ export default ({transitions}) => (
     {
       transitions.map((item, index) => {
         return (
-          <div>
+          <div key={index}>
             <div>
             {index + 1} -> {index + 2}
             </div>

@@ -13,7 +13,7 @@ export default ({checkpoints}) => (
     {
       checkpoints.map((item, index) => {
         return (
-          <div>
+          <div key={index}>
             <img src={item.imgSrc}/>
             <p>{item.rank}</p>
             <p>{item.title}</p>

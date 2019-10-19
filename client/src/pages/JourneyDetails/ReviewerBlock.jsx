@@ -1,11 +1,15 @@
 import React from 'react'
 
+import BpkPanel from 'bpk-component-panel';
+
+import { cssModules } from 'bpk-react-utils';
+import STYLES from './style.scss';
+const getClassName = cssModules(STYLES);
+
 export default ({ imgSrc, name, location }) => (
-  <div>
-    <hr />
-    <img src={imgSrc} />
-    <p>{name}</p>
-    <p>{location}</p>
-    <hr />
-  </div>
+    <div className={getClassName('reviewer-block')}>
+        <img src={imgSrc}/>
+        <p className={getClassName('reviewer-name')}>{name}</p>
+        <p className={getClassName('reviewer-name')}>{location}</p>
+    </div>
 )

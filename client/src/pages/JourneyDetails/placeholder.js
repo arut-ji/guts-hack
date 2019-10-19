@@ -37,5 +37,6 @@ export default {
     to: 'Choi Hung Estate',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor'
   },],
-  mapImgSrc: ''
+  mapImgSrc: 'https://via.placeholder.com/374x284',
+  totalPrice: 100,
 }
