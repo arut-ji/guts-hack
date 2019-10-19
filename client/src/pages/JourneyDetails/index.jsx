@@ -27,9 +27,9 @@ const JourneyDetails = () => (
     <div className={getClassName('header')}>
       <div className={getClassName('flex')}>
         <p>{journey.title}</p>
-        <div>
-        {journey.liked ? <BpkHeartIcon className='pink-icon'/> : <BpkHeartOutlineIcon className='pink-icon'/>}
-        </div>
+        {/*<div>*/}
+        {/*{journey.liked ? <BpkHeartIcon className='pink-icon'/> : <BpkHeartOutlineIcon className='pink-icon'/>}*/}
+        {/*</div>*/}
       </div>
       <p className={getClassName('sub-header')}>{journey.location}</p>
       <p className={getClassName('eco-header')}>50% <BpkEcoIcon/> </p>
