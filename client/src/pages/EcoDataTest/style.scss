@@ -1,0 +1,21 @@
+@import '~bpk-mixins/index';
+
+.waste-highlight {
+  background-image: url('https://via.placeholder.com/125x125');
+  height: 125;
+}
+
+.waste-content {
+  background-color: white;
+  font-size: 0.8em;
+}
+
+.waste-content strong {
+  display: block;
+  font-size: 1.2em;
+}
+
+.no-gutters {
+  padding-left: 0px;
+  padding-right: 0px;
+}
