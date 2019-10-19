@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "backpack-react-scripts": "7.0.2",
+    "bpk-component-icon": "^5.0.5",
+    "bpk-component-image": "^3.0.5",
+    "bpk-tokens": "^29.0.3",
     "react": "16.10",
     "react-dom": "16.10"
   },
@@ -22,8 +25,9 @@
   "devDependencies": {
     "bpk-component-button": "*",
     "bpk-component-code": "*",
+    "bpk-component-mobile-scroll-container": "^2.0.5",
     "bpk-component-table": "^2.0.5",
-    "bpk-component-text": "*",
+    "bpk-component-text": "^2.0.5",
     "bpk-mixins": "*",
     "bpk-stylesheets": "*"
   }
