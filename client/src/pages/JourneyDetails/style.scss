@@ -8,7 +8,6 @@
 .scroll-container {
   display: flex;
 
-
   &__item {
     display: flex;
     min-width: $bpk-spacing-xxl * 5;
@@ -18,9 +17,22 @@
 }
 
 .scroll-container-inner {
-  width: 204px;
+  border: solid 1px #424242;
+  min-width: 204px;
+  padding: 25px 19px;
+  margin: 27px 5px;
+
   p {
-    word-wrap: break-word;
+    white-space: normal;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 19px 0;
+    font-size: 16px;
+  }
+
+  p:nth-child(3) {
+    color: #555555;
+    font-size: 14px;
   }
 
 }
@@ -50,14 +62,27 @@
   right: 0;
   height: 60px;
 
+
   &__actual {
     background-color: white;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    padding: 16px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;;
+    font-size: 24px;
+    z-index: 10;
+
+    span {
+      font-size: 16px;
+    }
   }
+
+
 }
 
 .back-button-container {
@@ -168,4 +193,14 @@ p {
   }
 }
 
+.wrap {
+  overflow-wrap: break-word;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
 

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import BpkMobileScrollContainer from 'bpk-component-mobile-scroll-container';
+import onetwo from '../../Assets/1to2.svg'
 
 import { cssModules } from 'bpk-react-utils';
 import STYLES from './style.scss';
@@ -11,33 +12,30 @@ export default ({transitions}) => (
   <h1>Traveling</h1>
   <BpkMobileScrollContainer>
     <div className={getClassName('scroll-container')}>
-    {
-      transitions.map((item, index) => {
-        return (
-          <div className={getClassName('scroll-container-inner')} key={index}>
-            <div>
-            {index + 1} -> {index + 2}
+      {
+        transitions.map((item, index) => {
+          return (
+            <div className={getClassName('scroll-container-inner')} key={index}>
+              <div className={getClassName('center')}>
+                <img src={onetwo} alt="onetotwo"/>
+              </div>
+              <p>
+                {item.from}
+              <br/>
+                to
+                <br/>
+                {item.to}
+              </p>
+              <p>
+                {item.description}
+              </p>
             </div>
-            <p>
-              {item.from}
-            </p>
-            <p>
-              to
-            </p>
-            <p>
-              {item.to}
-            </p>
-            <p>
-              {item.description}
-            </p>
-          </div>
-        )
-      })
-    }
+          )
+        })
+      }
     </div>
   </BpkMobileScrollContainer>
   <div>
-    {} -> {}
   </div>
 </div>
 )

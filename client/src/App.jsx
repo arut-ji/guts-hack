@@ -2,9 +2,8 @@ import React, {useState} from 'react';
 import BpkButton from 'bpk-component-button';
 import BpkText from 'bpk-component-text';
 import STYLES from './App.scss';
-import Home from "./pages/Home";
-import JourneyDetails from "./pages/JourneyDetails";
-
+import JourneyDetails from './pages/JourneyDetails';
+import EcoDataTest from './pages/EcoDataTest';
 const c = className => STYLES[className] || 'UNKNOWN';
 
 const App = () => {
@@ -13,7 +12,7 @@ const App = () => {
 
   return (
     <div className={c('App')}>
-      {/*<Home/>*/}
+      <EcoDataTest/>
       <JourneyDetails/>
     </div>
   );

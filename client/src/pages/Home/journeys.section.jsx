@@ -8,17 +8,23 @@ const Container = styled.div`
   flex-direction: column;
   width: 100%;
   padding-left: 24px;
+  
+  .topic {
+    margin-top: 30px;
+    margin-bottom: 26px;
+  }
 `;
 
 const StyledLink = styled.p`
   color: #73cec6;
   font-size: 16px;
+  margin-bottom: 47px;
 `;
 
 const JourneySection = () => {
   return (
     <Container>
-      <h1>Journeys</h1>
+      <h1 className='topic'>Journeys</h1>
       <JourneyList>
         {
           (new Array(5).fill(5).map(_ => <JourneyCard/>))
