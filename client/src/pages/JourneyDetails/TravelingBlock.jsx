@@ -14,7 +14,7 @@ export default ({transitions}) => (
     {
       transitions.map((item, index) => {
         return (
-          <div key={index}>
+          <div className={getClassName('scroll-container-inner')} key={index}>
             <div>
             {index + 1} -> {index + 2}
             </div>

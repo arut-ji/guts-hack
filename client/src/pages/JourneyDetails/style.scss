@@ -1,5 +1,10 @@
 @import '~bpk-mixins/index';
 
+.travelling-block {
+  margin: 23px;
+  text-align: left;
+}
+
 .scroll-container {
   display: flex;
 
@@ -10,6 +15,14 @@
     height: $bpk-spacing-xxl * 5;
     background-color: $bpk-color-sky-gray-tint-07;
   }
+}
+
+.scroll-container-inner {
+  width: 204px;
+  p {
+    word-wrap: break-word;
+  }
+
 }
 
 .scroll-container-text {
@@ -155,6 +168,4 @@ p {
   }
 }
 
-.travelling-block {
-  margin: 23px;
-}
+
