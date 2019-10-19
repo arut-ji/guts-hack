@@ -10,7 +10,8 @@ body {
 }
 
 .App {
-  text-align: center;
+  text-align: left;
+  font-family: 'Questrial', sans-serif;
 
   &__header {
     padding: $bpk-spacing-lg * 2;

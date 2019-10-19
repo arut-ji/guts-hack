@@ -20,6 +20,10 @@ const Image = styled.div`
 const TextBox = styled.div`
   width: 100%;
   padding: 0 24px;
+  
+  p {
+    margin-bottom: 42px;
+  }
 `;
 
 const MapSection = () => {
