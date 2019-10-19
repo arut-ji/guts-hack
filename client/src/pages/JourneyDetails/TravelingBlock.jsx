@@ -7,7 +7,7 @@ import STYLES from './style.scss';
 const getClassName = cssModules(STYLES);
 
 export default ({transitions}) => (
-<div>
+<div className={getClassName('travelling-block')}>
   <h1>Traveling</h1>
   <BpkMobileScrollContainer>
     <div className={getClassName('scroll-container')}>
