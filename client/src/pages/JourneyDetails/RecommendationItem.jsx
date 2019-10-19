@@ -9,12 +9,7 @@ const getClassName = cssModules(STYLES);
 export default ({ imgSrc, rank, title, location }) => (
   <div>
     <img className={getClassName('checkpoint-image')} src={imgSrc} />
-    {/* <BpkImage
-    altText="image description"
-    width={231}
-    height={185}
-    src={imgSrc}
-  /> */}
+  />
     <p>#{rank} Destination</p>
     <p>{title}</p>
     <p>{location}</p>
