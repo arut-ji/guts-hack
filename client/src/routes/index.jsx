@@ -5,7 +5,6 @@ import {routes} from './route.config';
 function RouteWithSubRoutes(route) {
   return (
     <Route
-      exact
       path={route.path}
       render={props => (
         <route.component {...props} routes={route.routes || null}/>
@@ -17,13 +16,14 @@ function RouteWithSubRoutes(route) {
 export const RouteConfig = () => {
   return (
     <Router>
-      <div>
-        <Switch>
-          {routes.map((route, i) => (
-            <RouteWithSubRoutes key={i} {...route} />
-          ))}
-        </Switch>
-      </div>
+      {routes.map((route) => (
+        <Route
+          exact
+          key={route.path}
+          path={route.path}
+          component={route.component}
+        />
+      ))}
     </Router>
   );
 };

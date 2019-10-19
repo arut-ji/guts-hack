@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import hongkong from '../../Assets/hongkong_pack.png'
-import rightarrow from '../../Assets/chevron-right.svg'
+import {Link} from  'react-router-dom';
 
 const Container = styled.div`
   width: calc(216 / 375 * 100vw);
@@ -47,6 +47,13 @@ const DetailsSection = styled.div`
   }
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-size: 12px;
+  color: #ff9400;
+  cursor: pointer;
+`;
+
 const JourneyCard = () => {
   return (
     <Container>
@@ -56,7 +63,7 @@ const JourneyCard = () => {
       <DetailsSection>
         <h1>Hong Kong Pack</h1>
         <h2>Hong Kong</h2>
-        <p>See Details ></p>
+        <StyledLink to={'/journey-details'}>See Details ></StyledLink>
       </DetailsSection>
     </Container>
   )
