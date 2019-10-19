@@ -1,21 +1,40 @@
 @import '~bpk-mixins/index';
 
 .waste-highlight {
-  background-image: url('https://via.placeholder.com/125x125');
-  height: 125;
 }
 
 .waste-content {
-  background-color: white;
-  font-size: 0.8em;
+  font-size: 14px;
+  line-height: normal;
+  margin-top: 5px;
 }
 
 .waste-content strong {
   display: block;
-  font-size: 1.2em;
+  font-size: 16px;
+  margin: 10px 0 20px;
+  color: white;
 }
 
 .no-gutters {
+  background-color: #02122C;
   padding-left: 0px;
   padding-right: 0px;
+  text-align: center;
+  color: #CDCDD7;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  span {
+    font-size: 24px;
+    color: white;
+  }
+}
+
+.info-container {
+  margin: 0;
+  background-color: #02122C;
+  padding-top: $bpk-spacing-md;
 }
