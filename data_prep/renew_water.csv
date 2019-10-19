@@ -1,4 +1,4 @@
-Entity,Code,Year,Per capita renewable resources (m³ per person per year)
+Entity,Code,Year,CubicPerPerson
 Africa,,2015,3319
 Americas,,2015,19725
 Asia,,2015,2697
@@ -14,5 +14,5 @@ Oceania,,2015,29225
 South America,,2015,30428
 South Asia,,2015,1131
 Sub-Saharan Africa,,2015,3879
-Western & Central Europe,,2015,4006
+Western Europe,,2015,4006
 World,OWID_WRL,2015,5829
