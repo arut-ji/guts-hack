@@ -7,7 +7,7 @@ import STYLES from './style.scss';
 const getClassName = cssModules(STYLES);
 
 export default () => (
-  <BpkGridContainer fullWidth>
+  <BpkGridContainer fullWidth className={getClassName('info-container')}>
     <BpkGridRow>
       {
         WasteData.map((item, index) => (

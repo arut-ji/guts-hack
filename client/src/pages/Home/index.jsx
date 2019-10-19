@@ -7,6 +7,7 @@ import FeatureSection from "./feature.section";
 import FeedbackSection from "./Feedback.section";
 import FooterSection from "./footer.section";
 import Navbar from "../../shared/Navbar";
+import EcoDataSection from '../EcoDataTest/index';
 
 const Container = styled.div`
   display: flex;
@@ -22,6 +23,7 @@ const Home = () => {
       <HeroSection/>
       <JourneySection/>
       <MapSection/>
+      <EcoDataSection/>
       <FeatureSection/>
       <FeedbackSection/>
       <FooterSection/>
