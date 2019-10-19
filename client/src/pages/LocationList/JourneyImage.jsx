@@ -11,7 +11,7 @@ const Image = styled(BpkImage)`
 
 const PictureSection = styled.div`
 	border-radius: 6px 6px 0 0;
-	height: 16vh;
+	height: 200px;
 	width: 100%;
 	background-image: url(${(props) => props.url});
 	background-size: cover;

@@ -1,8 +1,11 @@
 import React from 'react';
 import { BpkAccordion, BpkAccordionItem, withAccordionItemState } from 'bpk-component-accordion';
 import BpkCard from 'bpk-component-card';
+import BpkThemeProvider from 'bpk-theming';
 
 import JourneyCard from './JourneyCard';
+
+
 
 const listItems = () => {
 	const items = [

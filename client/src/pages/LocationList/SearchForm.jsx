@@ -13,7 +13,7 @@ const Search = (props) => {
 		event.target.name === 'origin' ? setOrigin(event.target.value) : setDestination(event.target.value);
 
 	return (
-		<BpkCard style={{ padding: 10, marginTop: 20, marginBottom: 20, marginLeft: 10, marginRight: 10 }}>
+		<BpkCard style={{ padding: 10, marginTop: 20, marginBottom: 20, marginLeft: 10, marginRight: 10,   backgroundColor: '#f1f2f8'}}>
 			<BpkGridContainer>
 				<BpkGridRow>
 					<BpkGridColumn width={4} tabletWidth={12}>
