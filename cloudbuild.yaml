@@ -2,6 +2,3 @@ steps:
   - name: 'gcr.io/cloud-builders/npm'
     args: [ 'install' ]
     dir:  'client'
-  - name: 'gcr.io/cloud-builders/npm'
-    args: [ 'test' ]
-    dir: 'client'
