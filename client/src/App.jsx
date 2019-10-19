@@ -13,8 +13,8 @@ const App = () => {
 
   return (
     <div className={c('App')}>
-      {/*<Home/>*/}
-      <JourneyDetails/>
+      <Home/>
+      {/*<JourneyDetails/>*/}
     </div>
   );
 };

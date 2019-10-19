@@ -13,7 +13,7 @@ const PictureSection = styled.div`
    width: 100%;
    
    img {
-     height: 100%
+     height: 100%;
      border-radius: 6px 6px 0 0; 
    }
 `;
@@ -25,6 +25,8 @@ const DetailsSection = styled.div`
   border-radius: 0 0 6px 6px;
   color: white;
   z-index: 1;
+  margin-bottom: 19px;
+  
   * {
     margin: -4px 0;
   }
