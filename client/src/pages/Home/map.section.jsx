@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import map from '../../Assets/Map_svg.svg'
 
 const Container = styled.div`
   width: 100%;
@@ -8,7 +9,7 @@ const Container = styled.div`
 
 const Image = styled.div`
   width: 100%;
-  height: 50vh;
+  height: auto;
   background-color: grey;
   display: flex;
   flex-direction: column;
@@ -31,7 +32,7 @@ const MapSection = () => {
         </p>
       </TextBox>
       <Image>
-        <h1>Map</h1>
+        <img src={map} alt="map"/>
       </Image>
     </Container>
   )

@@ -25,7 +25,7 @@ const JourneySection = () => {
         }
       </JourneyList>
       <StyledLink>
-        See All Journey
+        See All Journey >
       </StyledLink>
     </Container>
   )

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import hongkong from '../../Assets/hongkong_pack.png'
+import rightarrow from '../../Assets/chevron-right.svg'
 
 const Container = styled.div`
   width: calc(216 / 375 * 100vw);
@@ -7,10 +9,13 @@ const Container = styled.div`
 `;
 
 const PictureSection = styled.div`
-   border-radius: 6px 6px 0 0; 
    height: 20vh;
-   background-color: grey;
    width: 100%;
+   
+   img {
+     height: 100%
+     border-radius: 6px 6px 0 0; 
+   }
 `;
 
 const DetailsSection = styled.div`
@@ -19,6 +24,7 @@ const DetailsSection = styled.div`
   font-size: inherit;
   border-radius: 0 0 6px 6px;
   color: white;
+  z-index: 1;
   * {
     margin: -4px 0;
   }
@@ -33,16 +39,22 @@ const DetailsSection = styled.div`
     font-size: 12px;
     color: #ff9400;
   }
+  i {
+    color: #ff9400;
+    font-size: 12px;
+  }
 `;
 
 const JourneyCard = () => {
   return (
     <Container>
-      <PictureSection/>
+      <PictureSection>
+        <img  src={hongkong} alt="hongkong"/>
+      </PictureSection>
       <DetailsSection>
         <h1>Hong Kong Pack</h1>
         <h2>Hong Kong</h2>
-        <p>See Details</p>
+        <p>See Details ></p>
       </DetailsSection>
     </Container>
   )

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import React from 'react';
+import { ReactComponent as Logo } from '../../Assets/Pizzascanner_Logo.svg';
+
 
 const Container = styled.div`
   height: 61px;
@@ -8,10 +10,11 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: pink;
+  background-color: white;
+  position: fixed;
+  z-index: 10;
 `;
 
-const Logo = styled.h2``;
 
 const HamburgerBar = styled.div`
   width: 35px;
@@ -19,6 +22,7 @@ const HamburgerBar = styled.div`
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
+  border-radius: 3px;
 `;
 
 const Hamburger = styled.div`
@@ -29,7 +33,6 @@ const Navbar = () => {
   return (
     <Container>
       <Logo>
-        Pizzascanner
       </Logo>
       <Hamburger>
         <HamburgerBar/>

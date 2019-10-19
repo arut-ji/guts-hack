@@ -12,6 +12,8 @@ const FeedbackBox = styled.div`
   text-align: center;
   font-size: 24px;
   line-height: 34px;
+  color: #444560;
+  font-style: italic;
   
   > p {
     margin: 0;
