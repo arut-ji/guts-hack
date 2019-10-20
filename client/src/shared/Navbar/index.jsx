@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from 'react';
+import React, {useState} from 'react';
 import { ReactComponent as Logo } from '../../Assets/Pizzascanner_Logo.svg';
 import {useHistory} from 'react-router-dom';
 
@@ -15,6 +15,11 @@ const Container = styled.div`
   z-index: 10;
 `;
 
+const NavbarItem = styled.div`
+  height: 61px;
+  padding: 0 21px;
+  width: 100%;
+`;
 
 const HamburgerBar = styled.div`
   width: 35px;
@@ -32,6 +37,8 @@ const Hamburger = styled.div`
 const Navbar = () => {
 
   const history = useHistory();
+  const [isOpen, setIsOpen] = useState(initState);
+
 
   return (
     <Container>
@@ -42,6 +49,7 @@ const Navbar = () => {
         <HamburgerBar/>
         <HamburgerBar/>
       </Hamburger>
+
     </Container>
   )
 };

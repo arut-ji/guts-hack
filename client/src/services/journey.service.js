@@ -24,4 +24,9 @@ export class JourneyService {
     }
   }
 
+  static fetchAverageEmission({origin, destination}) {
+    const result = JourneyRepository.fetchAverageEmission({origin, destination});
+    return result;
+  }
+
 }
