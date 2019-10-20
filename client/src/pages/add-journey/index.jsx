@@ -5,6 +5,7 @@ import BpkText from 'bpk-component-text';
 import FormWithLabel from './form-with-label.component';
 import LocationForm from './location-list.component';
 import BpkButton from 'bpk-component-button';
+import ArrowLeftIconSm from 'bpk-component-icon/sm/long-arrow-left';
 
 const Container = styled.div`
   display: flex;
@@ -18,11 +19,13 @@ const Container = styled.div`
     margin-bottom: 17px;
   }
   
-  > :first-child {
+  > :nth-child(2) {
     margin-bottom: 36px;
   }
   
-  
+  svg {
+   margin-bottom: 10px;
+  }
 `;
 
 const Button = styled(BpkButton)`
@@ -48,6 +51,7 @@ const AddJourney = () => {
 
   return (
     <Container>
+      <a href='javascript:history.back()'><ArrowLeftIconSm/></a>
       <FormTitle>
         Add new journey
       </FormTitle>

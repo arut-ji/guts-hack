@@ -19,6 +19,9 @@ const Container = styled.div`
 
 const ListWrapper = styled.div`
   min-height: 50vh;
+  > div {
+    margin: 4px auto;
+  }
 `;
 
 const LocationListView = () => {

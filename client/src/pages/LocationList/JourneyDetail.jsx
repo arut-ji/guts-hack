@@ -9,6 +9,7 @@ import BkpSmallWorldIcon from 'bpk-component-icon/sm/world--amer';
 import BkpEcoLeafIcon from 'bpk-component-icon/lg/eco-leaf';
 import BpkCard from 'bpk-component-card';
 import BpkButton from 'bpk-component-button';
+import {useHistory} from 'react-router-dom';
 
 const EcoIndex = styled.span`
 	width: 32px;
@@ -67,6 +68,9 @@ const Price = styled.span`
 `;
 
 const JourneyDetail = (props) => {
+
+  const history = useHistory();
+
 	return (
 		<BpkGridRow>
 			<BpkCard style={{ paddingBottom: 20 }}>
@@ -94,6 +98,7 @@ const JourneyDetail = (props) => {
 								letterSpacing: 'normal',
 								textAlign: 'center'
 							}}
+              onClick={() => history.push('/journey-details')}
 						>
 							BOOK
 						</BpkButton>

@@ -9,6 +9,7 @@ import ReviewerBlock from './ReviewerBlock';
 import DescriptionBlock from './DescriptionBlock';
 import TravelingBlock from './TravelingBlock';
 import BookingBlock from './BookingBlock';
+import mapDirection from '../../Assets/map-direction.png'
 
 import { cssModules } from 'bpk-react-utils';
 import STYLES from './style.scss';
@@ -41,7 +42,7 @@ const JourneyDetails = () => (
     <DescriptionBlock content={journey.description}/>
     <TravelingBlock transitions={journey.transitions}/>
 
-    <img src={journey.mapImgSrc}/>
+    <img src={mapDirection}/>
 
     <BookingBlock onClick={onClickBook} totalPrice={journey.totalPrice}/>
   </div>
