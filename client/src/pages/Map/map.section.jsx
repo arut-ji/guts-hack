@@ -5,9 +5,11 @@ import LocationIconLg from 'bpk-component-icon/lg/location';
 import BpkMap, {BpkMapMarker, MARKER_TYPES, withGoogleMapsScript} from 'bpk-component-map';
 import {BpkExtraLargeSpinner} from 'bpk-component-spinner';
 import LeafIcon from 'bpk-component-icon/sm/eco-leaf';
+
 import markerData from './markerData';
 import geoCatalog from './geoCatalog';
 import countryToDetails, {countries} from './countryToDetails';
+
 
 // console.log(geoCatalog);
 console.log(countryToDetails);

@@ -14,6 +14,20 @@ const Wrapper = styled(StatefulAccordionItem)`
   *:focus {
     outline: none;
   }
+  
+  .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  .title > button {
+    border: solid 1px #5a489b;
+    border-radius: 50%;
+    height: fit-content;
+    
+    background-color: transparent;
+  }
 `;
 
 const Picture = styled.div`
@@ -38,7 +52,10 @@ const LocationItem = ({id, title, description, image}) => {
   return (
     <Wrapper title={title} id={id}>
       <div>
-        <h1>{title}</h1>
+        <div className="title">
+          <h1>{title}</h1>
+          <button>X</button>
+        </div>
         <Content>
           <Picture/>
           <Description>
