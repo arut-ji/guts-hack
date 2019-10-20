@@ -9,6 +9,7 @@ import FooterSection from "./footer.section";
 import Navbar from "../../shared/Navbar";
 import EcoDataSection from '../EcoDataTest/index';
 import Footer from '../../shared/Footer';
+import AddJourneySection from './addJourney.section'
 
 const Container = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ const Home = () => {
       <EcoDataSection/>
       <FeatureSection/>
       <FeedbackSection/>
+      <AddJourneySection/>
     </Container>
   )
 };

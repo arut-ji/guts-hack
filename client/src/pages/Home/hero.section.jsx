@@ -3,7 +3,6 @@ import styled from  'styled-components';
 import green from '../../Assets/green.jpg'
 
 const Container = styled.div`
-  margin-top: 61px;
   width: 100%;
   display: flex;
   position: relative;
