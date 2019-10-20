@@ -32,6 +32,7 @@
     "bpk-component-card": "^2.0.5",
     "bpk-component-code": "*",
     "bpk-component-datepicker": "^10.0.6",
+    "bpk-component-drawer": "^2.0.5",
     "bpk-component-grid": "^2.0.5",
     "bpk-component-icon": "^5.0.5",
     "bpk-component-image": "^3.0.5",
