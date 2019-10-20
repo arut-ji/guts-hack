@@ -4,13 +4,21 @@ import BpkPopover from 'bpk-component-popover';
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
 import BpkCard from 'bpk-component-card';
 import DatePicker from './DatePicker';
+import BpkButton from 'bpk-component-button';
+import {useHistory} from 'react-router-dom';
 
-const Search = (props) => {
-	const [ origin, setOrigin ] = useState('');
-	const [ destination, setDestination ] = useState('');
+const Search = ({origin, destination}) => {
 
-	const handleInputChange = (event) =>
-		event.target.name === 'origin' ? setOrigin(event.target.value) : setDestination(event.target.value);
+  const history = useHistory();
+
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+
+  const [departDate, setDepartDate] = useState(Date.now());
+  const [returnDate, setReturnDate] = useState(tomorrow);
+
+  const [formOrigin, setFormOrigin] = useState(origin)
+  const [formDestination, setFormDestination] = useState(destination);
 
 	return (
 		<BpkCard style={{ padding: 10, marginTop: 20, marginBottom: 20, marginLeft: 10, marginRight: 10,   backgroundColor: '#f1f2f8'}}>
@@ -23,12 +31,12 @@ const Search = (props) => {
 							id="origin"
 							type={INPUT_TYPES.text}
 							name="origin"
-							value={origin}
-							onChange={handleInputChange}
+							value={formOrigin}
+							onChange={(e) => setFormOrigin(e.target.value)}
 							placeholder="Country, city or airport"
 							clearButtonMode={CLEAR_BUTTON_MODES.whileEditing}
 							clearButtonLabel="Clear"
-							onClear={() => setOrigin("")}
+							onClear={() => setFormOrigin("")}
 						/>
 					</BpkGridColumn>
 					<BpkGridColumn width={4} tabletWidth={12}>
@@ -37,25 +45,31 @@ const Search = (props) => {
 							id="destination"
 							type={INPUT_TYPES.text}
 							name="destination"
-							value={destination}
-							onChange={handleInputChange}
+							value={formDestination}
+              onChange={(e) => setFormDestination(e.target.value)}
 							placeholder="Country, city or airport"
 							clearButtonMode={CLEAR_BUTTON_MODES.whileEditing}
 							clearButtonLabel="Clear"
-							onClear={() => setDestination("")}
+							onClear={() => setFormDestination("")}
 						/>
 					</BpkGridColumn>
 
 					<BpkGridRow>
 						<BpkGridColumn style={{ paddingLeft: 20, paddingRight: 10 }} width={2} tabletWidth={6}>
 							<label>Depart</label>
-							<DatePicker />
+							<DatePicker onSelected={(newDate) => setDepartDate(newDate)}/>
 						</BpkGridColumn>
 						<BpkGridColumn style={{ paddingLeft: 10, paddingRight: 20 }} width={2} tabletWidth={6}>
 							<label>Return</label>
-							<DatePicker />
+							<DatePicker
+                onSelected={(newDate) => setDepartDate(newDate)}
+                date={returnDate}
+              />
 						</BpkGridColumn>
 					</BpkGridRow>
+          <BpkGridColumn onClick={() => history.replace(`/locations?from=${formOrigin}&to=${formDestination}`)}>
+            <BpkButton>Search</BpkButton>
+          </BpkGridColumn>
 				</BpkGridRow>
 			</BpkGridContainer>
 		</BpkCard>

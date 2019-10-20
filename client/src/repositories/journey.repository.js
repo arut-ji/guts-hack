@@ -5,7 +5,8 @@ const journeyColllection = 'journeys';
 export class JourneyRepository {
 
   static async fetch({id}) {
-    console.log('Hello world')
+    return await firestore.collection(journeyColllection).doc(id)
+      .get()
   }
 
   static async fetchAll() {
@@ -32,6 +33,19 @@ export class JourneyRepository {
         }
       }));
     return result;
+  }
+
+  static async fetchByLocation({location}) {
+    return await firestore.collection(journeyColllection)
+      .where('location','==', location)
+      .get()
+      .then((querySnapshot) => querySnapshot.docs)
+      .then((docs) => docs.map((doc) => {
+        return {
+          id: doc.id,
+          ...doc.data()
+        }
+      }))
   }
 
   static save() {

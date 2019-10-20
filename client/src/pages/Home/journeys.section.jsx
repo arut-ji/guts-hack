@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import JourneyList from "./journey-list.component";
 import JourneyCard from "./journey-card.component";
-import {JourneyRepository} from '../../repositories/journey.repository';
+import {JourneyService} from "../../services/journey.service"
 import {Link} from 'react-router-dom';
 
 const Container = styled.div`
@@ -28,7 +28,7 @@ const JourneySection = () => {
 
   const [journeys, setJourneys] = useState([]);
   useEffect(() => {
-    JourneyRepository
+    JourneyService
       .fetchFeatured()
       .then((fetchedJourneys) => {
         console.log(fetchedJourneys)

@@ -29,7 +29,7 @@ const LocationList = styled(SingleItemAccordion)`
 
 const LocationForm = () => {
 
-  const [isModalOpen, setModalState] = useState(true);
+  const [isModalOpen, setModalState] = useState(false);
 
   return (
     <Wrapper>
