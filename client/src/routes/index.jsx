@@ -15,7 +15,7 @@ function RouteWithSubRoutes(route) {
 
 export const RouteConfig = () => {
   return (
-    <Router>
+    <div>
       {routes.map((route) => (
         <Route
           exact
@@ -24,7 +24,7 @@ export const RouteConfig = () => {
           component={route.component}
         />
       ))}
-    </Router>
+    </div>
   );
 };
 

@@ -54,15 +54,16 @@ const StyledLink = styled(Link)`
   cursor: pointer;
 `;
 
-const JourneyCard = () => {
+const JourneyCard = ({imgUrl, title, location}) => {
+
   return (
     <Container>
       <PictureSection>
-        <img  src={hongkong} alt="hongkong"/>
+        <img src={hongkong} alt={title}/>
       </PictureSection>
       <DetailsSection>
-        <h1>Hong Kong Pack</h1>
-        <h2>Hong Kong</h2>
+        <h1>{title}</h1>
+        <h2>{location}</h2>
         <StyledLink to={'/journey-details'}>See Details ></StyledLink>
       </DetailsSection>
     </Container>

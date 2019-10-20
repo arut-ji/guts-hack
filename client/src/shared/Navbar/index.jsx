@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React from 'react';
 import { ReactComponent as Logo } from '../../Assets/Pizzascanner_Logo.svg';
-
+import {useHistory} from 'react-router-dom';
 
 const Container = styled.div`
   height: 61px;
@@ -30,9 +30,12 @@ const Hamburger = styled.div`
 `;
 
 const Navbar = () => {
+
+  const history = useHistory();
+
   return (
     <Container>
-      <Logo>
+      <Logo onClick={() => history.replace('/')}>
       </Logo>
       <Hamburger>
         <HamburgerBar/>
