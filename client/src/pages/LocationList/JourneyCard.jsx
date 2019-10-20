@@ -9,13 +9,24 @@ import BkpSmallWorldIcon from 'bpk-component-icon/sm/world--amer'
 import JourneyDetail from './JourneyDetail';
 
 const StatefulAccordionItem = withAccordionItemState(BpkAccordionItem);
+
+const AccordionItem = styled(StatefulAccordionItem)`
+   .BpkAccordionItem_bpk-accordion__title-text__3a4GN {
+    color: #00a698;
+   }
+   
+   .BpkAccordionItem_bpk-accordion__toggle-button__eJ9jA:focus {
+      outline: 0;
+   }
+`;
+
 const JourneyCard = (props) => {
 	return (
-		<StatefulAccordionItem   title={props.country}>
+		<AccordionItem title={props.country}>
 			<BpkGridContainer>
 				{props.journeyList.map(j => <JourneyDetail name = {j.name} ecoIndex = {j.ecoIndex} price = {j.price} img= {j.img }/>)}
 			</BpkGridContainer>
-		</StatefulAccordionItem>
+		</AccordionItem>
 	);
 };
 export default JourneyCard;

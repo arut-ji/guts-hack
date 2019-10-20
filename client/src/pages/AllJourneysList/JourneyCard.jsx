@@ -9,6 +9,7 @@ import BpkSmallFlightIcon from 'bpk-component-icon/sm/flight';
 import BkpEcoLeafIcon from 'bpk-component-icon/lg/eco-leaf';
 import BpkCard from 'bpk-component-card';
 import BpkButton from 'bpk-component-button';
+import {useHistory} from 'react-router-dom';
 
 const Image = styled.div`
 	border-radius: 6px 6px 0 0;
@@ -79,6 +80,7 @@ const Price = styled.span`
 `;
 
 const JourneyCard = (props) => {
+  const history = useHistory();
 	return (
 		<BpkCard style={{ paddingBottom: 20 }}>
 			<BpkMobileScrollContainer>
@@ -121,6 +123,7 @@ const JourneyCard = (props) => {
 							letterSpacing: 'normal',
 							textAlign: 'center'
 						}}
+            onClick={() => history.push('/journey-details')}
 					>
 						BOOK
 					</BpkButton>

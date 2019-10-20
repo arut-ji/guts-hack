@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import styled from 'styled-components';
 import {country} from './countries.mock.js';
+import JourneyListView from './JourneyListView'
 
 const Container = styled.div`
   display: flex;
@@ -9,7 +10,7 @@ const Container = styled.div`
 
 const JourneysList = () => {
   return (
-    <JourneyListView props={country}/>
+    <JourneyListView {...country}/>
   )
 }
 

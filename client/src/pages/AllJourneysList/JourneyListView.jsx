@@ -25,8 +25,8 @@ const Intro = styled.p`
 `;
 
 const Header = styled.p`
-    margin-top: 0;
-	width: 167px;
+  margin-top: 0;
+	width: 100%;
 	height: 30px;
 	font-family: Questrial;
 	margin-bottom: 40px;
@@ -44,7 +44,7 @@ const JourneyListView = (props) => {
 			<BpkGridRow>
 				<BpkChevronLeft style={{marginTop:10}}/>
 			</BpkGridRow>
-			<Header>{props.location}</Header>
+			<Header>{props.countryName}</Header>
 			<Intro>Lorem ipsum dolor sit amet, consectetur adispiscing elit, sed do eiusmod temport incidunt ut</Intro>
 
 			<BpkGridRow>

@@ -1,6 +1,6 @@
 import Home from "../pages/Home";
 import JourneyDetails from "../pages/JourneyDetails/index";
-import JourneyList from "../pages/AllJourneysList/index";
+import JourneysList from "../pages/AllJourneysList/index";
 import LocationListView from "../pages/LocationList/LocationListView";
 
 export const routes = [
