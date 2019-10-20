@@ -29,9 +29,8 @@ const Container = styled.div`
 const MapMarker = styled(BpkMapMarker)`
  * {
   fill: green;
-  
+  opacity: 0;
  }
- 
 `;
 
 const GreenIcon = styled(LeafIcon)`
@@ -102,7 +101,6 @@ const MapSection = () => {
 
   return (
     <Container>
-    <LeafIcon className='low'/>
       {/* <Spinner loading={loading}/> */}
       <BpkMapWithScript
         zoom={2}
