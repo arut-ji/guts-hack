@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled from 'styled-components';
 import BpkLabel from 'bpk-component-label';
 import { BpkAccordion, BpkAccordionItem, withSingleItemAccordionState } from 'bpk-component-accordion';
 import LocationItem from './location-item.component';
 import BpkButton from 'bpk-component-button';
+import AddLocation from './add-location';
 
 const SingleItemAccordion = (BpkAccordion);
 
@@ -27,6 +28,9 @@ const LocationList = styled(SingleItemAccordion)`
 `;
 
 const LocationForm = () => {
+
+  const [isModalOpen, setModalState] = useState(true);
+
   return (
     <Wrapper>
       <Label htmlFor="origin">List of location</Label>
@@ -44,7 +48,20 @@ const LocationForm = () => {
           description={"Hello world"}
         />
       </LocationList>
-      <Button secondary>Add Location</Button>
+      <AddLocation
+        id={'add-location'}
+        isOpen={isModalOpen}
+        onClose={() => setModalState(false)}
+        title={'Add new location'}
+      />
+      <div id={'pagewrap'}>
+        <Button
+          secondary
+          onClick={() => setModalState(true)}
+        >
+          Add Location
+        </Button>
+      </div>
     </Wrapper>
   );
 };

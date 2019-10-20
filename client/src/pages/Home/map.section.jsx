@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import map from '../../Assets/Map_svg.svg'
+import {useHistory} from 'react-router-dom';
 
 const Container = styled.div`
   width: 100%;
@@ -27,6 +28,9 @@ const TextBox = styled.div`
 `;
 
 const MapSection = () => {
+
+  const history = useHistory();
+
   return (
     <Container>
       <TextBox>
@@ -35,7 +39,9 @@ const MapSection = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         </p>
       </TextBox>
-      <Image>
+      <Image
+        onClick={() => history.push('/maps')}
+      >
         <img src={map} alt="map"/>
       </Image>
     </Container>

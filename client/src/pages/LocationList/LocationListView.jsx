@@ -4,6 +4,7 @@ import JourneyItem from './JourneyImage'
 import SearchForm from './SearchForm'
 import { BpkGridContainer, BpkGridRow, BpkGridColumn } from 'bpk-component-grid';
 import styled from 'styled-components'
+import {usePosition} from '../../shared/hooks/use-location.hook'
 
 const Container = styled.div`
   display: flex;
@@ -13,6 +14,9 @@ const Container = styled.div`
 `;
 
 const LocationListView = () => {
+
+    const [lat, long, error] = usePosition();
+    console.log(lat, long)
     return (
 
         <Container>

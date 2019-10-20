@@ -3,6 +3,7 @@ import JourneyDetails from "../pages/JourneyDetails/index";
 import JourneysList from "../pages/AllJourneysList/index";
 import LocationListView from "../pages/LocationList/LocationListView";
 import AddJourney from "../pages/add-journey";
+import Map from "../pages/Map";
 
 export const routes = [
   {
@@ -24,5 +25,9 @@ export const routes = [
   {
     path: '/locations',
     component: LocationListView,
+  },
+  {
+    path: '/maps',
+    component: Map
   }
 ];

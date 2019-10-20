@@ -21,13 +21,6 @@ const JourneyImage = (props) => {
 	return (
 		<div>
 			<PictureSection url={props.img} />
-			{/* <Image
-				borderRadiusStyle = {BORDER_RADIUS_STYLES.sm}
-				altText="image of a location"
-				width={1000}
-				height={1000}
-				src="https://www.todayonline.com/sites/default/files/styles/new_app_article_detail/public/photos/43_images/hk2.jpg?itok=zX5eumeD"
-			/> */}
 		</div>
 	);
 };
