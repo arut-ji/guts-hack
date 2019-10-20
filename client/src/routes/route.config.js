@@ -2,6 +2,7 @@ import Home from "../pages/Home";
 import JourneyDetails from "../pages/JourneyDetails/index";
 import JourneysList from "../pages/AllJourneysList/index";
 import LocationListView from "../pages/LocationList/LocationListView";
+import AddJourney from "../pages/add-journey";
 
 export const routes = [
   {
@@ -15,6 +16,10 @@ export const routes = [
   {
     path: '/journeys',
     component: JourneysList,
+  },
+  {
+    path: '/add-journey',
+    component: AddJourney,
   },
   {
     path: '/locations',
