@@ -10,7 +10,6 @@ import markerData from './markerData';
 import geoCatalog from './geoCatalog';
 import countryToDetails, {countries} from './countryToDetails';
 
-import './style.scss';
 
 // console.log(geoCatalog);
 console.log(countryToDetails);
@@ -76,18 +75,18 @@ const generateMarkers = () => {
         onClick={() => {}}
       />)
   })
-  
+
   return markers;
 }
 
 const MapSection = () => {
-  
+
   const [loading, setLoading] = useState(false);
   const [coordinate, setCoordinate] = useState({
     latitude: 27.9881,
     longitude: 86.925,
   });
-  
+
   useEffect(() => {
     setLoading(true);
     navigator.geolocation.getCurrentPosition((result) => {
@@ -109,7 +108,7 @@ const MapSection = () => {
         panEnabled={true}
         center={{...coordinate}}
       >
-      
+
         <BpkMapMarker
           icon={<AlignedLandmarkIconLg />}
           type={MARKER_TYPES.primary}
@@ -122,7 +121,7 @@ const MapSection = () => {
       {
         generateMarkers()
       }
-      
+
           {/* <BpkMapMarker
             icon={<LeafIcon />}
             type={MARKER_TYPES.primary}

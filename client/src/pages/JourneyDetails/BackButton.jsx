@@ -17,9 +17,8 @@ const AlignedArrow = withAlignment(
 
 export default () => (
   <div className={getClassName('back-button-container')}>
-    <i className="fas fa-chevron-left"/>
     <BpkText textStyle="base">
-      <AlignedArrow fill={colors.colorSkyGrayTint01} />
+      <a href='javascript:history.back()'><AlignedArrow fill={colors.colorSkyGrayTint01} /></a>
     </BpkText>
   </div>
 )
